@@ -1,6 +1,40 @@
 {
   "redirects": [
     {
+      "source": "/redirect",
+      "has": [
+        {
+          "type": "query",
+          "key": "to",
+          "value": "refund"
+        },
+        {
+          "type": "query",
+          "key": "referer",
+          "value": "offline_store"
+        }
+      ],
+      "destination": "https://www.topiko.me/refund",
+      "permanent": true
+    },
+    {
+      "source": "/redirect",
+      "has": [
+        {
+          "type": "query",
+          "key": "to",
+          "value": "app"
+        },
+        {
+          "type": "query",
+          "key": "referer",
+          "value": "offline_store"
+        }
+      ],
+      "destination": "https://app.topiko.me",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "destination": "https://app.topiko.me/$1",
       "permanent": true
