@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://app.topiko.me/$1",
+      "permanent": true
+    }
+  ]
+}
